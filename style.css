@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap");
+:root {
+  --white: hsl(0, 100%, 100%);
+  --black: hsl(0, 0%, 0%);
+
+  /*Neutral Colors */
+  --Navy-950: hsl(226, 43%, 10%);
+  --Navy-900: hsl(235, 46%, 20%);
+  --Navy-800: hsl(235, 41%, 34%);
+  --Navy-200: hsl(236, 100%, 87%);
+
+  /* Primary Colors */
+  --Orange-300-work: hsl(15, 100%, 70%);
+  --Purple-700-social: hsl(264, 64%, 52%);
+  --Purple-600: hsl(246, 80%, 60%);
+  --Purple-500: hsl(235, 45%, 61%);
+
+  --Blue-300-play: hsl(195, 74%, 62%);
+  --Pink-400-study: hsl(348, 100%, 68%);
+  --Green-400-exercise: hsl(145, 58%, 55%);
+  --Yellow-300-self-care: hsl(43, 84%, 65%);
+
+  /*Typography
+  --Font-size: 18px;
+  Body Copy - Card titles e.g. work, play etc.,
+  */
+  /*
+  Font Family Rubik
+  Font weights 300, 400, 500
+  
+  Txt 1 - Rubik Lt 56px, 66px-line height, font-weight 300
+  Txt 2 - Rubik Lt 40px, 47px-line height, font-weight 300
+  Txt 3 - Rubik Lt 32px, 38px-line height, font-weight 300
+  Txt 4 - Rubik Lt 24px, 28px-line height, font-weight 300
+  Txt 5-med- Rubik med 18px, 21px-line height, font-weight 400
+  Txt 5-reg- Rubik reg 18px, 21px-line height, font-weight 500
+  Txt 6-reg- Rubik reg 15px, 18px-line height, font-weight 500
+  All 0px letter spacing
+  */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", serif;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

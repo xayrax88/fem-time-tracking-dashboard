@@ -20,8 +20,8 @@ fetch('data.json')
 
 function updateUI(timeframe) {
     jsonData.forEach((item, index) => {
-        allCurrentHrs[index].textContent = `Current - ${item.timeframes[timeframe].current} hours`;
-        allPreviousHrs[index].textContent = `Last week - ${item.timeframes[timeframe].previous} hours`
+        allCurrentHrs[index].textContent = `${item.timeframes[timeframe].current} Hrs`;
+        allPreviousHrs[index].textContent = `Last week - ${item.timeframes[timeframe].previous} Hrs`
     })
 }
 

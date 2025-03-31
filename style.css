@@ -53,8 +53,22 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background-color: var(--Navy-950);
 }
 
+ol {
+  display: grid;
+}
+
+li {
+  list-style: none;
+  /* border-style: 1px black; */
+}
+
+a {
+  text-decoration: none;
+  padding: 0 1.5em;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -66,9 +80,136 @@ body {
 
 /*Responsive Media Queries*/
 /* Mobile Size 390px-600px */
-/* @media only screen and (max-width: 390px) {
+@media only screen and (max-width: 390px) {
+  ol {
+    grid-template-columns: auto;
+    row-gap: 1.5em;
+  }
 
-} */
+  img {
+    height: 64px;
+    width: 64px;
+    border: 2px solid white;
+    border-radius: 2em;
+  }
+  p {
+    /* Txt 6-reg- Rubik reg 15px, 18px-line height, font-weight 500 */
+    color: var(--Navy-200);
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: regular;
+  }
+  h1 {
+    /* Txt 4 - Rubik Lt 24px, 28px-line height, font-weight 300 */
+    color: var(--white);
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: lighter;
+  }
+
+  p,
+  h1 {
+    margin-left: 0.5em;
+  }
+
+  svg {
+    height: 78px;
+    width: 78px;
+  }
+
+  .user-card {
+    display: flex;
+  }
+  .user {
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+    width: 327px;
+    border-radius: 1em;
+    background-color: var(--Purple-600);
+    position: relative;
+    z-index: 2;
+  }
+  .user-name {
+    display: inline-block;
+  }
+  .time-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1em;
+    /* height: 70px; */
+    /* height: 100%; */
+    height: 203px;
+    width: 327px;
+    /* border: 1px solid red; */
+    border-radius: 1em;
+    background-color: var(--Navy-900);
+    position: absolute;
+    z-index: 1;
+  }
+
+  .link-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+  }
+
+  .selected-link {
+    color: var(--white);
+  }
+  .work-wrapper {
+    position: relative;
+    width: 327px;
+  }
+  .work-bg {
+    /*time-tab*/
+    display: flex;
+    width: 327px;
+    min-height: 160px;
+    margin-top: 4.5em;
+    border-radius: 1em;
+    background-color: var(--Orange-300-work);
+    z-index: 3;
+    padding: 1em;
+    position: absolute;
+  }
+
+  .svg-container {
+    position: absolute;
+    right: 1em;
+    top: 0em;
+  }
+  .work-svg {
+    right: 0;
+    position: absolute;
+  }
+
+  .work-display {
+    /*user*/
+    display: inline-block;
+    padding: 2em;
+    justify-content: center;
+    width: 327px;
+    height: 122px;
+    border-radius: 1em;
+    background-color: var(--Navy-900);
+    position: relative;
+    z-index: 4;
+    top: 7em;
+  }
+
+  .card-title {
+    /*  Txt 5-med- Rubik med 18px, 21px-line height, font-weight 400*/
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+  .work-title {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
 
 /* Tablet size 768px */
 /* @media only screen and (min-width: 391px) and (max-width: 768px) {

@@ -1,10 +1,18 @@
-const dailyButton = document.querySelector('.daily-btn');
-const weeklyButton = document.querySelector('.weekly-btn');
-const monthlyButton = document.querySelector('.monthly-btn');
-const currentHours = document.querySelector('.current-hrs');
+const dailyBtn = document.querySelector('.daily-btn');
+const weeklyBtn = document.querySelector('.weekly-btn');
+const monthlyBtn = document.querySelector('.monthly-btn');
+const currentHrs = document.querySelector('.current-hrs');
+const previousHrs = document.querySelector('.previous-hrs');
 
+fetch('/data.json').then((response) => {
+    if (!response.ok) return console.log('Data was not fetched');
 
-
-dailyButton.addEventListener('click', () => {
-
+    return response.json();
+}).then((data) => {
+    console.log(data);
 })
+
+
+// dailyBtn.addEventListener('click', () => {
+
+// })

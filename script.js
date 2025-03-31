@@ -1,8 +1,8 @@
 const dailyBtn = document.querySelector('.daily-btn');
 const weeklyBtn = document.querySelector('.weekly-btn');
 const monthlyBtn = document.querySelector('.monthly-btn');
-const currentHrs = document.querySelector('.current-hrs');
-const previousHrs = document.querySelector('.previous-hrs');
+const allCurrentHrs = document.querySelectorAll('.current-hrs');
+const allPreviousHrs = document.querySelectorAll('.previous-hrs');
 
 let jsonData = [];
 fetch('data.json')
@@ -12,16 +12,16 @@ fetch('data.json')
         return response.json();
     })
     .then((data) => {
-        json = data;
-        //console.log(json[0]);
-        updateUI('daily'); //update daily data UI
+        jsonData = data
+        //console.log(jsonData[0]);
+        updateUI('daily'); //Display daily data by default
     })
     .catch(error => console.log(error));
 
 function updateUI(timeframe) {
     jsonData.forEach((item, index) => {
-        currentHrs[index].textContent = `Current - ${item.timeframes[timeframe].current} hours`;
-        previousHrs[index].textContent = `Last week - ${item.timeframes[timeframe].previous} hours`
+        allCurrentHrs[index].textContent = `Current - ${item.timeframes[timeframe].current} hours`;
+        allPreviousHrs[index].textContent = `Last week - ${item.timeframes[timeframe].previous} hours`
     })
 }
 

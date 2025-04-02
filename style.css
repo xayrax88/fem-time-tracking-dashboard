@@ -69,6 +69,12 @@ a {
   text-decoration: none;
   padding: 0 1.5em;
 }
+
+.elipsis {
+  width: 21px;
+  height: 5px;
+  margin-left: auto;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -107,7 +113,6 @@ a {
     font-weight: lighter;
   }
 
-  p,
   h1 {
     margin-left: 0.5em;
   }
@@ -158,21 +163,29 @@ a {
   .selected-link {
     color: var(--white);
   }
-  .work-wrapper {
+  /* .work-wrapper {
     position: relative;
     width: 327px;
-  }
+  } */
   .work-bg {
-    /*time-tab*/
+    background-color: var(--Orange-300-work);
+    position: absolute;
+    margin-top: 4.5em;
+  }
+  .play-bg {
+    background-color: var(--Blue-300-play);
+    margin-top: 7em;
+    position: relative;
+  }
+
+  .work-bg,
+  .play-bg {
     display: flex;
     width: 327px;
     min-height: 160px;
-    margin-top: 4.5em;
     border-radius: 1em;
-    background-color: var(--Orange-300-work);
     z-index: 3;
     padding: 1em;
-    position: absolute;
   }
 
   .svg-container {
@@ -180,34 +193,65 @@ a {
     right: 1em;
     top: 0em;
   }
-  .work-svg {
-    right: 0;
-    position: absolute;
-  }
-
   .work-display {
-    /*user*/
-    display: inline-block;
-    padding: 2em;
-    justify-content: center;
+    top: 7em;
+  }
+  .play-display {
+    margin-top: 1.5em;
+    top: -9em;
+  }
+  .work-display,
+  .play-display,
+  .study-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 0.5em;
+    /* width: 100%; */
     width: 327px;
     height: 122px;
     border-radius: 1em;
     background-color: var(--Navy-900);
     position: relative;
     z-index: 4;
-    top: 7em;
+    padding: 1.5em;
+  }
+  .box-1-title,
+  .box-2-dots,
+  .box-3,
+  .box-4 {
+    display: flex;
+    align-items: center;
   }
 
+  .box-1-title {
+    justify-content: flex-start;
+  }
+  .box-2-dots {
+    justify-content: flex-end;
+  }
+  .box-3 {
+    justify-content: flex-start;
+  }
+  .box-4 {
+    justify-content: flex-end;
+  }
+
+  .current-hrs {
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--white);
+  }
+  .previous-hrs {
+    color: var(--Navy-200);
+  }
   .card-title {
     /*  Txt 5-med- Rubik med 18px, 21px-line height, font-weight 400*/
+    /* flex: 1;  */
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
-  }
-  .work-title {
-    display: flex;
-    justify-content: flex-end;
+    color: var(--white);
   }
 }
 

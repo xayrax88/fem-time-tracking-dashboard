@@ -60,9 +60,11 @@ ol {
   display: grid;
 }
 
+ol,
 li {
+  padding: 0;
+  margin: 0;
   list-style: none;
-  /* border-style: 1px black; */
 }
 
 a {
@@ -177,9 +179,14 @@ a {
     margin-top: 7em;
     position: relative;
   }
-
+  .study-bg {
+    background-color: var(--Pink-400-study);
+    margin-top: -9em;
+    position: relative;
+  }
   .work-bg,
-  .play-bg {
+  .play-bg,
+  .study-bg {
     display: flex;
     width: 327px;
     min-height: 160px;
@@ -199,6 +206,7 @@ a {
   .play-display {
     margin-top: 1.5em;
     top: -9em;
+    margin-bottom: 0;
   }
   .work-display,
   .play-display,

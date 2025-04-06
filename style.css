@@ -56,6 +56,10 @@ body {
   background-color: var(--Navy-950);
 }
 
+main {
+  margin-top: 1.5em;
+}
+
 ol {
   display: grid;
 }
@@ -208,6 +212,13 @@ a {
     top: -9em;
     margin-bottom: 0;
   }
+
+  .study-display {
+    margin-top: 1.5em;
+    top: -9em;
+    margin-bottom: 0;
+  }
+
   .work-display,
   .play-display,
   .study-display {

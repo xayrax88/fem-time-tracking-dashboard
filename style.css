@@ -188,9 +188,16 @@ a {
     margin-top: -9em;
     position: relative;
   }
+  .exercise-bg {
+    background-color: var(--Green-400-exercise);
+    margin-top: -9em;
+    position: relative;
+  }
+
   .work-bg,
   .play-bg,
-  .study-bg {
+  .study-bg,
+  .exercise-bg {
     display: flex;
     width: 327px;
     min-height: 160px;
@@ -219,9 +226,16 @@ a {
     margin-bottom: 0;
   }
 
+  .exercise-display {
+    margin-top: 1.5em;
+    top: -9em;
+    margin-bottom: 0;
+  }
+
   .work-display,
   .play-display,
-  .study-display {
+  .study-display,
+  .exercise-display {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);

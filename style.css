@@ -70,7 +70,10 @@ li {
   margin: 0;
   list-style: none;
 }
-
+/* li.selfcare-card {
+  margin-bottom: 0;
+  padding-bottom: 0;
+} */
 a {
   text-decoration: none;
   padding: 0 1.5em;
@@ -194,10 +197,24 @@ a {
     position: relative;
   }
 
+  .social-bg {
+    background-color: var(--Purple-700-social);
+    margin-top: -9em;
+    position: relative;
+  }
+
+  .selfcare-bg {
+    background-color: var(--Yellow-300-self-care);
+    margin-top: -9em;
+    position: relative;
+  }
+
   .work-bg,
   .play-bg,
   .study-bg,
-  .exercise-bg {
+  .exercise-bg,
+  .social-bg,
+  .selfcare-bg {
     display: flex;
     width: 327px;
     min-height: 160px;
@@ -232,10 +249,24 @@ a {
     margin-bottom: 0;
   }
 
+  .social-display {
+    margin-top: 1.5em;
+    top: -9em;
+    margin-bottom: 0;
+  }
+
+  .selfcare-display {
+    margin-top: 1.5em;
+    top: -9em;
+    margin-bottom: 0;
+  }
+
   .work-display,
   .play-display,
   .study-display,
-  .exercise-display {
+  .exercise-display,
+  .social-display,
+  .selfcare-display {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);

@@ -78,11 +78,20 @@ a {
   text-decoration: none;
   padding: 0 1.5em;
 }
-
+img {
+  height: 64px;
+  width: 64px;
+  border: 2px solid white;
+  border-radius: 2em;
+}
 .elipsis {
   width: 21px;
   height: 5px;
   margin-left: auto;
+}
+
+.selected-link {
+  color: var(--white);
 }
 .attribution {
   font-size: 11px;
@@ -101,12 +110,6 @@ a {
     row-gap: 1.5em;
   }
 
-  img {
-    height: 64px;
-    width: 64px;
-    border: 2px solid white;
-    border-radius: 2em;
-  }
   p {
     /* Txt 6-reg- Rubik reg 15px, 18px-line height, font-weight 500 */
     color: var(--Navy-200);
@@ -320,9 +323,216 @@ a {
 }
 
 /* Tablet size 768px */
-/* @media only screen and (min-width: 391px) and (max-width: 768px) {
+@media only screen and (min-width: 391px) and (max-width: 768px) {
+  ol {
+    grid-template-columns: auto 1fr 1fr;
+    row-gap: 1em;
+  }
 
-} */
+  p {
+    /* Txt 6-reg- Rubik reg 15px, 18px-line height, font-weight 500 */
+    color: var(--Navy-200);
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: regular;
+  }
+  h1 {
+    /* Txt 4 - Rubik Lt 24px, 28px-line height, font-weight 300 */
+    color: var(--white);
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: lighter;
+    margin-left: 0.5em;
+  }
+
+  svg {
+    height: 78px;
+    width: 78px;
+  }
+
+  li.user-card {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 612px;
+  }
+  .user {
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+    width: 612px;
+    border-radius: 1em;
+    background-color: var(--Purple-600);
+    position: relative;
+    z-index: 2;
+  }
+  .user-name {
+    display: inline-block;
+  }
+  .time-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1em;
+    /* height: 70px; */
+    /* height: 100%; */
+    height: 203px;
+    width: 612px;
+    /* border: 1px solid red; */
+    border-radius: 1em;
+    background-color: var(--Navy-900);
+    position: absolute;
+    z-index: 1;
+  }
+
+  .link-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+  }
+
+  .work-bg {
+    background-color: var(--Orange-300-work);
+    position: absolute;
+    margin-top: 4.5em;
+  }
+  .play-bg {
+    background-color: var(--Blue-300-play);
+    margin-top: 7em;
+    position: relative;
+  }
+  .study-bg {
+    background-color: var(--Pink-400-study);
+    margin-top: -9em;
+    position: relative;
+  }
+  .exercise-bg {
+    background-color: var(--Green-400-exercise);
+    margin-top: -9em;
+    position: relative;
+  }
+
+  .social-bg {
+    background-color: var(--Purple-700-social);
+    margin-top: -9em;
+    position: relative;
+  }
+
+  .selfcare-bg {
+    background-color: var(--Yellow-300-self-care);
+    margin-top: -9em;
+    position: relative;
+  }
+
+  .work-bg,
+  .play-bg,
+  .study-bg,
+  .exercise-bg,
+  .social-bg,
+  .selfcare-bg {
+    display: flex;
+    width: 327px;
+    min-height: 160px;
+    border-radius: 1em;
+    z-index: 3;
+    padding: 1em;
+  }
+
+  .svg-container {
+    position: absolute;
+    right: 1em;
+    top: 0em;
+  }
+  .work-display {
+    top: 7em;
+  }
+  .play-display {
+    margin-top: 1.5em;
+    top: -9em;
+    margin-bottom: 0;
+  }
+
+  .study-display {
+    margin-top: 1.5em;
+    top: -9em;
+    margin-bottom: 0;
+  }
+
+  .exercise-display {
+    margin-top: 1.5em;
+    top: -9em;
+    margin-bottom: 0;
+  }
+
+  .social-display {
+    margin-top: 1.5em;
+    top: -9em;
+    margin-bottom: 0;
+  }
+
+  .selfcare-display {
+    margin-top: 1.5em;
+    top: -9em;
+    margin-bottom: 0;
+  }
+
+  .work-display,
+  .play-display,
+  .study-display,
+  .exercise-display,
+  .social-display,
+  .selfcare-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 0.5em;
+    /* width: 100%; */
+    width: 327px;
+    height: 122px;
+    border-radius: 1em;
+    background-color: var(--Navy-900);
+    position: relative;
+    z-index: 4;
+    padding: 1.5em;
+  }
+  .box-1-title,
+  .box-2-dots,
+  .box-3,
+  .box-4 {
+    display: flex;
+    align-items: center;
+  }
+
+  .box-1-title {
+    justify-content: flex-start;
+  }
+  .box-2-dots {
+    justify-content: flex-end;
+  }
+  .box-3 {
+    justify-content: flex-start;
+  }
+  .box-4 {
+    justify-content: flex-end;
+  }
+
+  .current-hrs {
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--white);
+  }
+  .previous-hrs {
+    color: var(--Navy-200);
+  }
+  .card-title {
+    /*  Txt 5-med- Rubik med 18px, 21px-line height, font-weight 400*/
+    /* flex: 1;  */
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--white);
+  }
+}
 
 /* Desktop size 992px, 1200px, 1440px */
 /* @media only screen and (min-width: 769px) and (max-width: 1440px) {

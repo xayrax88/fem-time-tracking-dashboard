@@ -5,6 +5,7 @@ const allCurrentHrs = document.querySelectorAll('.current-hrs');
 const allPreviousHrs = document.querySelectorAll('.previous-hrs');
 const links = [dailyLink, weeklyLink, monthlyLink];
 
+//Grab the data from Json
 let jsonData = [];
 fetch('data.json')
     .then((response) => {
@@ -20,12 +21,15 @@ fetch('data.json')
     })
     .catch(error => console.log(error));
 
+//Update UI
 function updateUI(hours) {
     if (!jsonData.length) return;
 
     jsonData.forEach((item, index) => {
-        allCurrentHrs[index].textContent = `${item.timeframes[hours].current} Hrs`;
-        allPreviousHrs[index].textContent = `Last week - ${item.timeframes[hours].previous} Hrs`
+        allCurrentHrs[index].textContent =
+            `${item.timeframes[hours].current} Hrs`;
+        allPreviousHrs[index].textContent =
+            `Last week - ${item.timeframes[hours].previous} Hrs`
     })
 }
 

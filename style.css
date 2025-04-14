@@ -433,27 +433,35 @@ img {
     right: 1em;
     top: 0em;
   }
+
+  .exercise-bg,
+  .social-bg,
+  .selfcare-bg {
+    top: -16em;
+  }
   .work-display,
   .play-display,
   .study-display {
     top: -11em;
   }
+  .exercise-display,
+  .social-display,
+  .selfcare-display {
+    top: -28em;
+  }
 
   .exercise-display {
     margin-top: 1.5em;
-    top: -9em;
     margin-bottom: 0;
   }
 
   .social-display {
     margin-top: 1.5em;
-    top: -9em;
     margin-bottom: 0;
   }
 
   .selfcare-display {
     margin-top: 1.5em;
-    top: -9em;
     margin-bottom: 0;
   }
 

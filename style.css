@@ -524,6 +524,230 @@ img {
 }
 
 /* Desktop size 992px, 1200px, 1440px */
-/* @media only screen and (min-width: 769px) and (max-width: 1440px) {
+@media only screen and (min-width: 769px) /*and (max-width: 1440px) */ {
+  ol {
+    grid-template-columns: auto auto auto auto;
+    gap: 1.5em;
+  }
 
+  p {
+    /* Txt 6-reg- Rubik reg 15px, 18px-line height, font-weight 500 */
+    color: var(--Navy-200);
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: regular;
+  }
+  h1 {
+    /* Txt 4 - Rubik Lt 24px, 28px-line height, font-weight 300 */
+    color: var(--white);
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: lighter;
+    /* margin-left: 0.5em; */
+  }
+
+  svg {
+    height: 78px;
+    width: 78px;
+  }
+
+  img {
+    height: 64px;
+    width: 64px;
+    border: 2px solid white;
+    border-radius: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  li.user-card {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 255px;
+  }
+  .user {
+    /* display: flex; */
+    padding: 2em;
+    justify-content: center;
+    width: 255px;
+    height: 354px;
+    border-radius: 1em;
+    background-color: var(--Purple-600);
+    position: relative;
+    z-index: 2;
+    /* margin-bottom: .5em; */
+  }
+  .user-name {
+    display: inline-block;
+  }
+  .time-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1em;
+    height: 520px;
+    width: 255px;
+    border-radius: 1em;
+    background-color: var(--Navy-900);
+    position: absolute;
+    z-index: 1;
+  }
+
+  .link-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+  }
+
+  .work-bg {
+    background-color: var(--Orange-300-work);
+    /* position: absolute; */
+  }
+  .play-bg {
+    background-color: var(--Blue-300-play);
+  }
+  .study-bg {
+    background-color: var(--Pink-400-study);
+  }
+  .exercise-bg {
+    background-color: var(--Green-400-exercise);
+  }
+
+  .social-bg {
+    background-color: var(--Purple-700-social);
+  }
+
+  .selfcare-bg {
+    background-color: var(--Yellow-300-self-care);
+  }
+
+  .work-bg,
+  .play-bg,
+  .study-bg,
+  .exercise-bg,
+  .social-bg,
+  .selfcare-bg {
+    display: flex;
+    width: 255px;
+    min-height: 244px;
+    /* margin-top: 4.5em; */
+    border-radius: 1em;
+    z-index: 3;
+    padding: 1em;
+    position: relative;
+  }
+
+  .svg-container {
+    position: absolute;
+    right: 1em;
+    top: 0em;
+  }
+
+  .exercise-bg,
+  .selfcare-bg {
+    top: -16em;
+  }
+
+  .work-display,
+  .work-bg {
+    right: 35em;
+  }
+  .work-display {
+    top: -11em;
+  }
+  .play-display,
+  .play-bg {
+    right: -35em;
+  }
+  .play-display {
+    top: -40em;
+  }
+  .play-bg {
+    top: -29.2em;
+  }
+
+  /* .social-display {
+  top: -41.5em;
 } */
+
+  .study-display {
+    top: -38em;
+    right: -38em;
+  }
+  .exercise-display,
+  .selfcare-display {
+    top: -28em;
+  }
+
+  .exercise-display {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+  }
+
+  .social-display {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+  }
+
+  .selfcare-display {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+  }
+
+  .work-display,
+  .play-display,
+  .study-display,
+  .exercise-display,
+  .social-display,
+  .selfcare-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 0.5em;
+    /* width: 100%; */
+    width: 255px;
+    height: 199px;
+    border-radius: 1em;
+    background-color: var(--Navy-900);
+    position: relative;
+    z-index: 4;
+    padding: 1.5em;
+  }
+  .box-1-title,
+  .box-2-dots,
+  .box-3,
+  .box-4 {
+    display: flex;
+    align-items: center;
+  }
+
+  .box-1-title {
+    justify-content: flex-start;
+  }
+  .box-2-dots {
+    justify-content: flex-end;
+  }
+  .box-3 {
+    justify-content: flex-start;
+  }
+  .box-4 {
+    justify-content: flex-end;
+  }
+
+  .current-hrs {
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--white);
+  }
+  .previous-hrs {
+    color: var(--Navy-200);
+  }
+  .card-title {
+    /*  Txt 5-med- Rubik med 18px, 21px-line height, font-weight 400*/
+    /* flex: 1;  */
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--white);
+  }
+}

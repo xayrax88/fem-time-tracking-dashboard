@@ -584,7 +584,6 @@ img {
   .time-tab {
     display: flex;
     flex-direction: column;
-    /* align-items: flex-end; */
     justify-content: flex-end;
     padding: 1em;
     height: 520px;

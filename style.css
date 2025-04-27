@@ -540,8 +540,8 @@ img {
   h1 {
     /* Txt 4 - Rubik Lt 24px, 28px-line height, font-weight 300 */
     color: var(--white);
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 40px;
+    line-height: 47px;
     font-weight: lighter;
     /* margin-left: 0.5em; */
   }
@@ -579,10 +579,12 @@ img {
   }
   .user-name {
     display: inline-block;
+    margin-top: 1em;
   }
   .time-tab {
     display: flex;
     flex-direction: column;
+    /* align-items: flex-end; */
     justify-content: flex-end;
     padding: 1em;
     height: 520px;
@@ -595,8 +597,9 @@ img {
 
   .link-container {
     display: flex;
-    justify-content: center;
-    gap: 0.5em;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
   }
 
   .work-bg {

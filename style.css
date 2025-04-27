@@ -643,40 +643,65 @@ img {
     top: 0em;
   }
 
-  .exercise-bg,
-  .selfcare-bg {
-    top: -16em;
-  }
-
   .work-display,
   .work-bg {
     right: 35em;
   }
   .work-display {
-    top: -11em;
+    top: -12.4em;
   }
   .play-display,
   .play-bg {
     right: -35em;
   }
   .play-display {
-    top: -40em;
+    top: -41.5em;
   }
-  .play-bg {
+  .play-bg,
+  .study-bg {
     top: -29.2em;
   }
 
-  /* .social-display {
-  top: -41.5em;
-} */
-
-  .study-display {
-    top: -38em;
-    right: -38em;
+  .study-display,
+  .study-bg {
+    right: -35em;
   }
-  .exercise-display,
+  .study-display {
+    top: -41.5em;
+  }
+
+  .exercise-bg {
+    top: -11.9em;
+    right: 17.5em;
+  }
+  .exercise-display {
+    top: -25.8em;
+    right: 17.5em;
+  }
+
+  .social-bg,
+  .social-display {
+    right: 17.5em;
+  }
+
+  .social-bg {
+    top: -11.9em;
+  }
+  .social-display {
+    top: -25.8em;
+  }
+
+  .selfcare-bg,
   .selfcare-display {
-    top: -28em;
+    right: -52.4em;
+  }
+
+  .selfcare-bg {
+    top: -42.5em;
+  }
+
+  .selfcare-display {
+    top: -56.4em;
   }
 
   .exercise-display {
